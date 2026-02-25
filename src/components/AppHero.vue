@@ -12,7 +12,7 @@
             <template #append></template>
           </v-chip>
           <p class="text-h4 text-md-h3 font-weight-bold mb-6">
-            Digitala tjänster till ett fast medlemspris
+            Digital labbmiljö till ett fast medlemspris
           </p>
 
           <p class="text-body-1 text-medium-emphasis mb-10">
