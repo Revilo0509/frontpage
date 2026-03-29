@@ -17,7 +17,7 @@
 
           <p class="text-body-1 text-medium-emphasis mb-10">
             Vi drivs utan vinstintresse och levererar trygga och hållbara
-            lösningar för ideella verksamheter och privatpersoner.
+            lösningar för ideella föreningar och privatpersoner.
           </p>
 
           <div class="d-flex ga-4 align-center justify-start flex-wrap">
