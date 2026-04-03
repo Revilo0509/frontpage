@@ -29,7 +29,6 @@
     "unplugin-auto-import": "^21.0.0",
     "unplugin-fonts": "^1.4.0",
     "unplugin-vue-components": "^32.0.0",
-    "unplugin-vue-router": "^0.19.2",
     "vite": "^8.0.3",
     "vite-plugin-vue-layouts-next": "^2.1.0",
     "vite-plugin-vuetify": "^2.1.3",
