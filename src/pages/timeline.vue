@@ -9,7 +9,7 @@
       >
         <v-alert :color="item.color" :icon="item.icon" :value="true">
           <v-alert-title>
-            <v-chip label variant="tonal" size="x-small">
+            <v-chip label size="x-small" variant="tonal">
               {{ date.format(item.date, "fullDateWithWeekday") }}
             </v-chip>
           </v-alert-title>
@@ -53,7 +53,7 @@ const items = [
   },
 ];
 
-const getItems = () => {
-  return items.sort((a, b) => b.date - a.date);
-};
+function getItems() {
+  return items.toSorted((a, b) => b.date - a.date);
+}
 </script>
