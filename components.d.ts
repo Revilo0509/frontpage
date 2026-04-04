@@ -11,11 +11,14 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    AppContent: typeof import('./src/components/AppContent.vue')['default']
+    AppCta: typeof import('./src/components/AppCta.vue')['default']
     AppFeatures: typeof import('./src/components/AppFeatures.vue')['default']
     AppFooter: typeof import('./src/components/AppFooter.vue')['default']
     AppHero: typeof import('./src/components/AppHero.vue')['default']
     AppNavigation: typeof import('./src/components/AppNavigation.vue')['default']
     AppPartners: typeof import('./src/components/AppPartners.vue')['default']
+    AppPricing: typeof import('./src/components/AppPricing.vue')['default']
     AppSection: typeof import('./src/components/AppSection.vue')['default']
     AppSystemBar: typeof import('./src/components/AppSystemBar.vue')['default']
     AppTeam: typeof import('./src/components/AppTeam.vue')['default']

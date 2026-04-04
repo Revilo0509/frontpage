@@ -54,10 +54,6 @@ async function fetchConfig() {
 
 fetchConfig();
 
-// I don't know if this function is deprecated or still in use.
-// But the linting said it was used so I commented it out just in case instead of removing it.
-
-/*
 function getTeamMembers(teamId: string): User[] {
   const members = conf.value.users.filter((user) =>
     user.teams.find((team) => team.id === teamId),
@@ -104,5 +100,4 @@ function getTeamMembers(teamId: string): User[] {
 
   return sortedUsers;
 }
-*/
 </script>

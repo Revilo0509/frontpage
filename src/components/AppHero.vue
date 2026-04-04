@@ -47,11 +47,7 @@
       </v-col>
       <v-col class="hidden-sm-and-down pa-0" md="6" rols="12">
         <v-responsive>
-          <v-img
-            cover
-            height="640"
-            src="https://s3.zyner.org/frontpage/assets/hero.png"
-          />
+          <v-img cover height="640" src="https://s3.zyner.org/frontpage/assets/hero.png" />
         </v-responsive>
       </v-col>
     </v-row>

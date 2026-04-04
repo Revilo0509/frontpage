@@ -1,6 +1,7 @@
+/* eslint-disable unicorn/no-array-for-each */
 import type { WebConfig } from "./types";
 
-async function fetchConfigData(url: string): Promise<WebConfig> {
+const fetchConfigData = async (url: string): Promise<WebConfig> => {
   try {
     const response = await fetch(url);
 
@@ -17,8 +18,8 @@ async function fetchConfigData(url: string): Promise<WebConfig> {
     console.error("Error fetching config JSON data:", error);
     throw error;
   }
-}
+};
 
-export async function getWebConfig(url: string): Promise<WebConfig> {
+export const getWebConfig = async (url: string): Promise<WebConfig> => {
   return await fetchConfigData(url);
-}
+};
