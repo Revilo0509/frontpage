@@ -1,13 +1,13 @@
-FROM node:24-alpine AS build-stage
+FROM node:26-alpine AS dependencies
 WORKDIR /app
-COPY package.json pnpm-lock.yaml ./
-RUN corepack enable && \
-    corepack install
-RUN pnpm install --frozen-lockfile
-COPY ./ .
-RUN pnpm run build
+COPY package*.json .
+RUN npm ci
 
-FROM nginx:1.29-alpine AS production-stage
+FROM dependencies AS build
+COPY . .
+RUN npm run build
+
+FROM nginx:1.31-alpine AS app
 RUN mkdir /app
-COPY --from=build-stage /app/dist /app
+COPY --from=build /app/dist /app
 COPY nginx.conf /etc/nginx/nginx.conf

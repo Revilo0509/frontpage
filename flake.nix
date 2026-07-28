@@ -1,12 +1,11 @@
 {
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
   };
 
   outputs =
     {
-      self,
       nixpkgs,
       flake-utils,
       ...
@@ -15,14 +14,21 @@
       system:
       let
         pkgs = nixpkgs.legacyPackages.${system};
+        targetPkgs = with pkgs; [
+          nodejs
+        ];
       in
       {
-        devShells.default = (pkgs.buildFHSEnv {
-          name = "website";
-          targetPkgs = pkgs : (with pkgs; [
-            nodejs_24
-          ]);
-        }).env;
+        devShells.default =
+          if pkgs.stdenv.isDarwin then
+            pkgs.mkShell {
+              buildInputs = targetPkgs;
+            }
+          else
+            pkgs.buildFHSEnv {
+              name = "website";
+              inherit targetPkgs;
+            };
       }
     );
 }
