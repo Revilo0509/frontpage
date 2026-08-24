@@ -23,21 +23,21 @@
     "check": "npm run lint && npm run fmt:check"
   },
   "dependencies": {
-    "@nuxt/ui": "^4.10.0",
-    "nuxt": "^4.5.1",
-    "vue": "^3.5.40",
+    "@nuxt/ui": "^4.11.0",
+    "nuxt": "^4.5.2",
+    "vue": "^3.5.41",
     "vue-router": "^5.2.0"
   },
   "devDependencies": {
-    "@histoire/plugin-vue": "^1.0.0-beta.1",
+    "@histoire/plugin-vue": "1.0.0-beta.1",
     "@nuxt/test-utils": "^4.1.0",
     "@vitejs/plugin-vue": "^6.0.8",
     "@vue/test-utils": "^2.4.11",
-    "happy-dom": "^20.11.1",
-    "histoire": "^1.0.0-beta.1",
-    "oxfmt": "^0.61.0",
-    "oxlint": "^1.76.0",
-    "playwright-core": "^1.62.0",
-    "vitest": "^4.1.10"
+    "happy-dom": "^20.11.6",
+    "histoire": "1.0.0-beta.1",
+    "oxfmt": "^0.64.0",
+    "oxlint": "^1.79.0",
+    "playwright-core": "^1.62.1",
+    "vitest": "^4.1.11"
   }
 }
