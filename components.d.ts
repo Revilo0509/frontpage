@@ -13,6 +13,6 @@ declare module 'vue' {
   export interface GlobalComponents {
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    UButton: typeof import('./node_modules/@nuxt/ui/dist/runtime/components/Button.vue')['default']
+    UButton: typeof import('./node_modules/.pnpm/@nuxt+ui@4.11.0_b4e4e76affbdca425177beb7fe027cce/node_modules/@nuxt/ui/dist/runtime/components/Button.vue')['default']
   }
 }

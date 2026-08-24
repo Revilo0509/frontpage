@@ -1,0 +1,31 @@
+<script setup lang="ts">
+var links = [
+  {
+    href: "#",
+    title: "Lorem",
+  },
+  {
+    href: "#",
+    title: "Lorem",
+  },
+  {
+    href: "#",
+    title: "Lorem",
+  },
+  {
+    href: "#",
+    title: "Lorem",
+  },
+] as const;
+</script>
+
+<!-- TODO: Implement a selector underneath the navlinks. -->
+<template>
+  <ul class="flex gap-4">
+    <li v-for="(item, index) in links" :key="index" class="hover:text-primary duration-150">
+      <a :href="item.href">
+        {{ item.title }}
+      </a>
+    </li>
+  </ul>
+</template>
