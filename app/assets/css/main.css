@@ -1,6 +1,13 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
 
+/* DM Sans */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+/* JetBrains Mono */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+/* Syne */
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+
 :root {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -12,7 +19,7 @@
 @theme {
   --font-sans: "DM Sans", system-ui, sans-serif;
   --font-mono: "JetBrains Mono", monospace;
-  --font-special: "Doto", system-ui, sans-serif;
+  --font-special: "Syne", system-ui, sans-serif;
 
   --color-accent-50: #eefaff;
   --color-accent-100: #daf3ff;
