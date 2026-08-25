@@ -5,9 +5,13 @@ import NavButtons from "./NavButtons.vue";
 </script>
 
 <template>
-  <header class="w-dvw bg-default p-4 flex justify-between items-center">
+  <header class="relative w-dvw bg-default p-4 flex justify-between items-center">
     <Logotype :title="true" />
-    <NavButtons />
+
+    <div class="absolute left-1/2 -translate-x-1/2">
+      <NavButtons />
+    </div>
+
     <BigButton />
   </header>
 </template>
