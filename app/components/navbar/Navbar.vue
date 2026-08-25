@@ -5,9 +5,9 @@ import NavButtons from "./NavButtons.vue";
 </script>
 
 <template>
-  <div class="w-dvw bg-default p-4 flex justify-between items-center">
+  <header class="w-dvw bg-default p-4 flex justify-between items-center">
     <Logotype :title="true" />
     <NavButtons />
     <BigButton />
-  </div>
+  </header>
 </template>
