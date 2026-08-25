@@ -1,5 +1,5 @@
 <script setup lang="ts">
-var links = [
+const links = [
   {
     href: "#",
     title: "Lorem",
