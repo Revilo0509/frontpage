@@ -1,5 +1,5 @@
 <template>
-  <div class="flex gap-4">
+  <nav class="flex gap-4">
     <UButton
       class="flex justify-center w-32 hover:cursor-pointer"
       color="neutral"
@@ -16,5 +16,5 @@
       label="Bli medlem"
       href="#"
     />
-  </div>
+  </nav>
 </template>
