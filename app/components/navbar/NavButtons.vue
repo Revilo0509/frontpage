@@ -24,9 +24,9 @@ const links = [
   <nav class="contents">
     <ul class="flex gap-4">
       <li v-for="(item, index) in links" :key="index" class="hover:text-primary duration-150">
-        <a :href="item.href">
+        <NuxtLink :to="item.href">
           {{ item.title }}
-        </a>
+        </NuxtLink>
       </li>
     </ul>
   </nav>
