@@ -11,7 +11,7 @@
     />
     <!-- TODO: Point the "Become member" button to the signup page -->
     <UButton
-      class="flex justify-center w-32 hover:cursor-pointer"
+      class="flex justify-center w-32 hover:cursor-pointer text-white"
       icon="material-symbols:person"
       label="Bli medlem"
       href="#"
