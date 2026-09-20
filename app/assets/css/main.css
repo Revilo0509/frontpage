@@ -11,6 +11,11 @@
   --ui-primary: var(--color-accent-600);
 }
 
+/* TODO: Remove ts */
+html {
+  scrollbar-gutter: stable;
+}
+
 @theme {
   --font-sans: "DM Sans", system-ui, sans-serif;
   --font-mono: "JetBrains Mono", monospace;
