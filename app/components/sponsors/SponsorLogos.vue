@@ -42,7 +42,7 @@ const Sponsors = [
   },
   {
     logo: "https://s3.zyner.org/frontpage/assets/sponsors/cachyos.svg",
-    href: "https://go.zyner.org/royalroppers",
+    href: "https://go.zyner.org/cachyos",
     name: "CachyOS",
   },
   {
@@ -59,10 +59,17 @@ const Sponsors = [
 </script>
 
 <template>
-  <div class="flex-none flex items-center no-scrollbar animate-move">
-    <div v-for="(item, index) in Sponsors" :key="index" class="flex gap-4 items-center pr-24">
+  <div
+    class="flex-none flex items-center no-scrollbar animate-move group-hover:[animation-play-state:paused]"
+  >
+    <a
+      v-for="(item, index) in Sponsors"
+      :key="index"
+      class="flex gap-4 items-center pr-24 hover:scale-110 duration-75"
+      :href="item.href"
+    >
       <img :src="item.logo" class="size-12" />
       <h1 class="text-xl">{{ item.name }}</h1>
-    </div>
+    </a>
   </div>
 </template>
