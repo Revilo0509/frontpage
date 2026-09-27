@@ -1,5 +1,6 @@
 <template>
   <nav class="flex gap-4">
+    <UColorModeButton />
     <UButton
       class="flex justify-center w-32 hover:cursor-pointer"
       color="neutral"
