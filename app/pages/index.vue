@@ -1,7 +1,4 @@
-<script setup lang="ts">
-import Hero from "~/components/hero/Hero.vue";
-</script>
-
 <template>
   <Hero></Hero>
+  <Sponsors></Sponsors>
 </template>
