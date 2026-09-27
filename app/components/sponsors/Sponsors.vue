@@ -1,3 +1,10 @@
+<script setup lang="ts">
+import SponsorLogos from "./SponsorLogos.vue";
+</script>
+
 <template>
-  <section class="w-full h-16 bg-accent-500"></section>
+  <section class="p-4 overflow-x-clip flex">
+    <SponsorLogos />
+    <SponsorLogos aria-hidden />
+  </section>
 </template>
