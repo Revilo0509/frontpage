@@ -15,7 +15,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <header ref="navbar" class="relative w-dvw bg-default p-4 flex justify-between items-center">
+  <header ref="navbar" class="relative w-full bg-default p-4 flex justify-between items-center">
     <Logotype :title="true" />
 
     <div class="absolute left-1/2 -translate-x-1/2">

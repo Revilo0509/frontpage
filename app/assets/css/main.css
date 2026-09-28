@@ -11,6 +11,10 @@
   --ui-primary: var(--color-accent-600);
 }
 
+@utility no-scrollbar {
+  @apply [scrollbar-width:none] [&::-webkit-scrollbar]:hidden;
+}
+
 @theme {
   --font-sans: "DM Sans", system-ui, sans-serif;
   --font-mono: "JetBrains Mono", monospace;
@@ -27,4 +31,14 @@
   --color-accent-800: #1863b5;
   --color-accent-900: #1a548e;
   --color-accent-950: #153456;
+
+  --animate-move: move 20s linear infinite;
+  @keyframes move {
+    from {
+      translate: 0;
+    }
+    to {
+      translate: -100%;
+    }
+  }
 }
