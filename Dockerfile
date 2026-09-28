@@ -1,13 +1,12 @@
-FROM node:26-alpine AS dependencies
+FROM ghcr.io/pnpm/pnpm:12 AS builder
 WORKDIR /app
-COPY package*.json .
-RUN npm ci
+COPY package.json pnpm-lock.yaml pnpm-workspace.yaml .
+RUN pnpm ci
 
-FROM dependencies AS build
 COPY . .
-RUN npm run build
+RUN pnpm generate
 
-FROM nginx:1.31-alpine AS app
+FROM docker.io/nginx:1.31-alpine AS app
 RUN mkdir /app
-COPY --from=build /app/dist /app
+COPY --from=builder /app/.output/public /app
 COPY nginx.conf /etc/nginx/nginx.conf
