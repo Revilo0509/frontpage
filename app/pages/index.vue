@@ -67,7 +67,7 @@ const Sponsors = [
   <UMain>
     <Hero></Hero>
     <ScrollingBanner :items="Sponsors" />
-    <GridInfo
+    <ScalableInfo
       :title1="lorem_short"
       :description1="lorem_long"
       :title2="lorem_short"
@@ -77,7 +77,7 @@ const Sponsors = [
       :title4="lorem_short"
       :description4="lorem_long"
     />
-    <ScalableInfo
+    <GridInfo
       :title1="lorem_short"
       :description1="lorem_long"
       :title2="lorem_short"

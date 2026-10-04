@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import GoalCard from "./Card.vue";
+import InfoCard from "./Card.vue";
 import SectionHeader from "../sections/SectionHeader.vue";
 import SectionWrapper from "../sections/SectionWrapper.vue";
 
@@ -16,14 +16,18 @@ defineProps<{
 </script>
 
 <template>
-  <SectionWrapper>
-    <SectionHeader note="Vad vi erbjuder" title="Vårt mål" />
+  <SectionWrapper class="bg-neutral-50 dark:bg-neutral-950">
+    <SectionHeader
+      note="Vad vi erbjuder"
+      title="Till dig som medlem"
+      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+    />
 
-    <ul class="grid grid-cols-2 bg-neutral-700 gap-0.5 mt-16">
-      <GoalCard num="01" :title="title1" :description="description1" />
-      <GoalCard num="02" :title="title2" :description="description2" />
-      <GoalCard num="03" :title="title3" :description="description3" />
-      <GoalCard num="04" :title="title4" :description="description4" />
+    <ul class="flex pt-16 flex-col lg:flex-row">
+      <InfoCard num="01" :title="title1" :description="description1" />
+      <InfoCard num="02" :title="title2" :description="description2" />
+      <InfoCard num="03" :title="title3" :description="description3" />
+      <InfoCard num="04" :title="title4" :description="description4" />
     </ul>
   </SectionWrapper>
 </template>
