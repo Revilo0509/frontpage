@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import GoalCard from "./Card.vue";
+import Card from "./Card.vue";
 import SectionHeader from "../sections/SectionHeader.vue";
 import SectionWrapper from "../sections/SectionWrapper.vue";
 
@@ -20,10 +20,10 @@ defineProps<{
     <SectionHeader note="Vad vi erbjuder" title="Vårt mål" />
 
     <ul class="grid grid-cols-2 bg-neutral-700 gap-0.5 mt-16">
-      <GoalCard num="01" :title="title1" :description="description1" />
-      <GoalCard num="02" :title="title2" :description="description2" />
-      <GoalCard num="03" :title="title3" :description="description3" />
-      <GoalCard num="04" :title="title4" :description="description4" />
+      <Card num="01" :title="title1" :description="description1" />
+      <Card num="02" :title="title2" :description="description2" />
+      <Card num="03" :title="title3" :description="description3" />
+      <Card num="04" :title="title4" :description="description4" />
     </ul>
   </SectionWrapper>
 </template>

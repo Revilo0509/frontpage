@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import InfoCard from "./Card.vue";
+import Card from "./Card.vue";
 import SectionHeader from "../sections/SectionHeader.vue";
 import SectionWrapper from "../sections/SectionWrapper.vue";
 
@@ -24,10 +24,10 @@ defineProps<{
     />
 
     <ul class="flex pt-16 flex-col lg:flex-row">
-      <InfoCard num="01" :title="title1" :description="description1" />
-      <InfoCard num="02" :title="title2" :description="description2" />
-      <InfoCard num="03" :title="title3" :description="description3" />
-      <InfoCard num="04" :title="title4" :description="description4" />
+      <Card num="01" :title="title1" :description="description1" />
+      <Card num="02" :title="title2" :description="description2" />
+      <Card num="03" :title="title3" :description="description3" />
+      <Card num="04" :title="title4" :description="description4" />
     </ul>
   </SectionWrapper>
 </template>
