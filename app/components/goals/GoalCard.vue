@@ -1,13 +1,13 @@
 <script setup lang="ts">
-let props = defineProps({
-  num: String,
-  title: String,
-  desc: String,
-});
+const props = defineProps<{
+  num: string;
+  title: string;
+  desc: string;
+}>();
 </script>
 
 <template>
-  <div class="bg-default p-12">
+  <div class="bg-default p-8 lg:p-12">
     <div class="flex w-full justify-between">
       <!-- Decorative Blue Line -->
       <div class="bg-accent-700 h-0.5 w-8"></div>

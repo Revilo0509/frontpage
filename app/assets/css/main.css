@@ -9,6 +9,11 @@
   -webkit-text-size-adjust: 100%;
 
   --ui-primary: var(--color-accent-600);
+  --ui-bg: var(--color-neutral-200);
+}
+
+.dark {
+  --ui-bg: var(--color-neutral-900);
 }
 
 @utility no-scrollbar {
@@ -31,6 +36,13 @@
   --color-accent-800: #1863b5;
   --color-accent-900: #1a548e;
   --color-accent-950: #153456;
+
+  --color-neutral-50: #ffffff;
+  --color-neutral-200: #dcdcdc;
+  --color-neutral-500: #697285;
+  --color-neutral-800: #2a3140;
+  --color-neutral-900: #171b24;
+  --color-neutral-950: #030913;
 
   --animate-move: move 20s linear infinite;
   @keyframes move {

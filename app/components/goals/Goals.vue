@@ -3,9 +3,9 @@ import GoalCard from "./GoalCard.vue";
 </script>
 
 <template>
-  <section class="w-full h-screen flex items-center justify-center">
+  <section class="w-full h-fit py-48 flex items-center justify-center">
     <div class="w-[80%]">
-      <span class="font-decorative text-accent-500 text-[clamp(1.25rem,2.5vw,2.25rem)]">
+      <span class="font-decorative text-accent-500 text-[clamp(1.25rem,2.5vw,2.25rem)] font-bold">
         — Vad vi erbjuder
       </span>
 

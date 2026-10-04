@@ -1,14 +1,15 @@
 <script setup lang="ts">
-let props = defineProps({
-  num: String,
-  title: String,
-  desc: String,
-});
+const props = defineProps<{
+  num: string;
+  title: string;
+  desc: string;
+}>();
 </script>
 
 <template>
-  <div
+  <UCard
     class="outline rounded-2xl p-8 flex-1 hover:flex-4 duration-200 h-[50vh] ease-in-out outline-neutral-500 hover:outline-accent-700 group from-black/30 to-100% bg-linear-to-t"
+    :ui="{ body: 'h-full p-0 sm:p-0' }"
   >
     <div class="flex flex-col justify-between size-full relative">
       <!-- Background title -->
@@ -30,5 +31,5 @@ let props = defineProps({
         <p class="text-xl">{{ props.desc }}</p>
       </div>
     </div>
-  </div>
+  </UCard>
 </template>

@@ -1,27 +1,35 @@
 <script setup lang="ts">
-import Logotype from "../logotype/Logotype.vue";
-import BigButton from "./BigButtons.vue";
-import NavButtons from "./NavButtons.vue";
-import { useTemplateRef, onMounted } from "vue";
+import type { NavigationMenuItem } from "@nuxt/ui";
+import PromotionButtons from "./PromotionButtons.vue";
 
-const navbar = useTemplateRef<HTMLElement>("navbar");
-
-onMounted(() => {
-  document.documentElement.style.setProperty(
-    "--navbar-height",
-    `${navbar.value?.clientHeight ?? 0}px`,
-  );
-});
+const links = computed<NavigationMenuItem[]>(() => [
+  { to: "#", label: "Lorem" },
+  { to: "#", label: "Lorem" },
+  { to: "#", label: "Lorem" },
+  { to: "#", label: "Lorem" },
+]);
 </script>
 
 <template>
-  <header ref="navbar" class="relative w-full bg-default p-4 flex justify-between items-center">
-    <Logotype :title="true" />
+  <UHeader mode="slideover" class="p-8">
+    <template #left>
+      <Logotype :title="true" />
+    </template>
 
-    <div class="absolute left-1/2 -translate-x-1/2">
-      <NavButtons />
-    </div>
+    <UNavigationMenu :items="links" />
 
-    <BigButton />
-  </header>
+    <template #right>
+      <UColorModeButton />
+      <div class="max-lg:hidden flex gap-3">
+        <PromotionButtons />
+      </div>
+    </template>
+
+    <template #body>
+      <UNavigationMenu :items="links" orientation="vertical" />
+      <div class="lg:hidden flex flex-col py-4 gap-2 *:w-full">
+        <PromotionButtons />
+      </div>
+    </template>
+  </UHeader>
 </template>

@@ -62,14 +62,14 @@ const Sponsors = [
   <div
     class="flex-none flex items-center no-scrollbar animate-move group-hover:[animation-play-state:paused]"
   >
-    <a
-      v-for="(item, index) in Sponsors"
-      :key="index"
+    <ULink
+      v-for="item in Sponsors"
+      :key="item.name"
       class="flex gap-4 items-center pr-24 hover:scale-110 duration-75"
       :href="item.href"
     >
-      <img :src="item.logo" class="size-12" />
-      <h1 class="text-xl">{{ item.name }}</h1>
-    </a>
+      <img :src="item.logo" :alt="item.name" class="size-12" />
+      <span class="text-xl">{{ item.name }}</span>
+    </ULink>
   </div>
 </template>

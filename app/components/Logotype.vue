@@ -1,0 +1,12 @@
+<script setup>
+defineProps({
+  title: Boolean,
+});
+</script>
+
+<template>
+  <ULink class="flex items-center gap-2" href="/">
+    <img src="https://s3.zyner.org/brand/logo.svg" alt="Zyner" class="size-10 rounded-lg" />
+    <h1 v-if="title" class="font-bold text-xl font-mono">Zyner</h1>
+  </ULink>
+</template>
