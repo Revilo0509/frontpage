@@ -2,7 +2,7 @@
 const props = defineProps<{
   num: string;
   title: string;
-  desc: string;
+  description: string;
 }>();
 </script>
 
@@ -14,6 +14,6 @@ const props = defineProps<{
       <span class="font-mono">{{ props.num }}</span>
     </div>
     <h1 class="text-2xl mb-6">{{ props.title }}</h1>
-    <p class="max-w-[75%]">{{ props.desc }}</p>
+    <p class="max-w-[75%]">{{ props.description }}</p>
   </div>
 </template>

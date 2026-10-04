@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { NavigationMenuItem } from "@nuxt/ui";
-import PromotionButtons from "./PromotionButtons.vue";
+import Buttons from "./Buttons.vue";
 
 const links = computed<NavigationMenuItem[]>(() => [
   { to: "#", label: "Lorem" },
@@ -21,14 +21,14 @@ const links = computed<NavigationMenuItem[]>(() => [
     <template #right>
       <UColorModeButton />
       <div class="max-lg:hidden flex gap-3">
-        <PromotionButtons />
+        <Buttons />
       </div>
     </template>
 
     <template #body>
       <UNavigationMenu :items="links" orientation="vertical" />
       <div class="lg:hidden flex flex-col py-4 gap-2 *:w-full">
-        <PromotionButtons />
+        <Buttons />
       </div>
     </template>
   </UHeader>

@@ -10,6 +10,7 @@
 
   --ui-primary: var(--color-accent-600);
   --ui-bg: var(--color-neutral-200);
+  --ui-container: 100%;
 }
 
 .dark {

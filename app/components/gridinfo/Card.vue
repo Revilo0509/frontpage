@@ -2,13 +2,13 @@
 const props = defineProps<{
   num: string;
   title: string;
-  desc: string;
+  description: string;
 }>();
 </script>
 
 <template>
   <UCard
-    class="outline rounded-2xl p-8 flex-1 hover:flex-4 duration-200 h-[50vh] ease-in-out outline-neutral-500 hover:outline-accent-700 group from-black/30 to-100% bg-linear-to-t"
+    class="outline rounded-2xl p-8 flex-1 hover:flex-4 duration-200 h-[50vh] ease-in-out outline-neutral-500 hover:outline-accent-700 group"
     :ui="{ body: 'h-full p-0 sm:p-0' }"
   >
     <div class="flex flex-col justify-between size-full relative">
@@ -28,7 +28,7 @@ const props = defineProps<{
       </div>
       <div class="opacity-0 group-hover:opacity-100">
         <h1 class="text-6xl font-bold font-mono pb-4">{{ props.title }}</h1>
-        <p class="text-xl">{{ props.desc }}</p>
+        <p class="text-xl">{{ props.description }}</p>
       </div>
     </div>
   </UCard>
